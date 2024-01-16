@@ -625,5 +625,8 @@ div {
   .menu-burger {
     cursor: pointer;
   }
-
+  
+  .prod-info {
+    max-width: 100%;
+  }
 }
