@@ -6,7 +6,8 @@ import email from '../assets/email.png'
 
 const Navbar = () => {
 
-    const location = document.location.href?.split('/').at(-1)
+    const loc = document.location.href?.split('/')
+    const location = loc ? loc.at(-1) : ''
 
     const [yOffset, setYoffset] = useState(0)
     useEffect(() => {
