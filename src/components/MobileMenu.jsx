@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const MobileMenu = ({ action }) => {
 
-       const loc = document.location.href?.split('/') || []
-    const location = loc && loc.length ? loc.at(-1) : ''
+    const loc = document.location.href?.split('/').reverse() || []
+    const location = loc && loc.length ? loc[0] : ''
 
     const getList = (href) => {
         switch (href) {
