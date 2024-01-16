@@ -8,7 +8,7 @@ const Hero = () => {
 
     return (
         <div className='hero'>
-            <video src={video} className="hero-video" autoPlay muted loop style={{ zIndex: 0 }}></video>
+            <video src={video} className="hero-video" muted loop style={{ zIndex: 0 }}></video>
             <div className="video-overlay"></div>
             <div className="hero-container container">
                 <h1 className='hero-motto'>
