@@ -18,8 +18,8 @@ const ServiceHero = () => {
                             <div className="col blue-text">Сжатые сроки производства</div>
                         </div>
                         <div className="row w-100 mt-4 mb-5">
-                            <div className="col blue-text">Решаем задачи в день обращения</div>
-                            <div className="col blue-text">Сжатые сроки производства</div>
+                            <div className="col blue-text">Собственный парк оборудования</div>
+                            <div className="col blue-text">Конкурентные цены и качество</div>
                         </div>
                     </div>
                 </div>
