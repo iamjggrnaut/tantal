@@ -92,7 +92,6 @@ div {
   flex-direction: column;
   padding: 32px;
   color: var(--primary-text);
-  background-color: var(--bg-dark);
 }
 
 .contact-info a,
