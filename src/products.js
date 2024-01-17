@@ -1,4 +1,5 @@
 import box from './assets/products/item1.jpg'
+import cases from './assets/products/item.jpg'
 import handle from './assets/products/item2.jpg'
 import rolls from './assets/products/item3.jpg'
 import cages from './assets/products/item4.jpg'
@@ -9,6 +10,12 @@ import construction from './assets/products/item8.jpg'
 
 const data = {
     data: [
+        {
+            id: 3,
+            name: 'Ящики алюминиевые',
+            description: 'Легкие и прочные алюминиевые ящики, предназначенные для хранения и транспортировки различных материалов. Идеальны для использования в логистике, складском хозяйстве и других отраслях. Обеспечивают надежную защиту содержимого и легкость в обращении.',
+            image: cages
+        },
         {
             id: 1,
             name: 'Корпус металлический',
