@@ -336,15 +336,16 @@ div {
 }
 
 .contact-container {
-  width: 80%;
+  width: 90%;
   padding-left: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .leaflet-container {
-  width: 368px !important;
-  height: 240px !important;
+  width: 100% !important;
+  height: 400px !important;
   border-radius: 8px;
 }
 
