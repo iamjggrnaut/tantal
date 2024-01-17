@@ -8,11 +8,20 @@ import ContactBlock from '../components/Home/ContactBlock'
 import Footer from '../components/Footer'
 import NavMobile from '../components/NavMobile'
 import MobileMenu from '../components/MobileMenu'
+import LoaderScreen from '../components/LoaderScreen'
 
 const Home = ({ action }) => {
 
+    const [load, setLoad] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setLoad(false)
+        }, 3000);
+    }, [])
+
     return (
         <div className='home-page'>
+             <LoaderScreen load={load} />
             <Navbar />
             <NavMobile action={action} />
             <MobileMenu action={action} />
