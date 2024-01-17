@@ -19,7 +19,7 @@ const ProductsBlock = () => {
                             data && data.data.slice(0, 2).map((item) => (
                                 <div className="product-card" key={item.id}>
                                     <img src={item.image} alt="" />
-                                    <h5 className='fs-4'>{item.name}</h5>
+                                    <h5 className='fs-4 text-center'>{item.name}</h5>
                                     <p className="text-center">
                                         {item.description}
                                     </p>
@@ -36,7 +36,7 @@ const ProductsBlock = () => {
                             data && data.data.slice(2, 4).map((item) => (
                                 <div className="product-card" key={item.id}>
                                     <img src={item.image} alt="" />
-                                    <h5 className='fs-4'>{item.name}</h5>
+                                    <h5 className='fs-4 text-center'>{item.name}</h5>
                                     <p className="text-center">
                                         {item.description}
                                     </p>
