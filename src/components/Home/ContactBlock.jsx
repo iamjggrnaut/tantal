@@ -29,7 +29,6 @@ const ContactBlock = () => {
                 <div className="contact-container">
                     <div>
                         <div className="d-flex align-items-center">
-                            <img id='logo' src={logo} alt="" className='mr-5' />
                             <h2 className='fw-bold'>ТАНТАЛ</h2>
                         </div>
                         <div className="contact-info">
