@@ -480,6 +480,95 @@ div {
   display: none;
 }
 
+
+.loader-screen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 999999;
+  background-color: #141617;
+}
+
+.loader-hidden {
+  width: 100vw;
+  height: 0vh;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.loader {
+  width: 0;
+  height: 4.8px;
+  display: inline-block;
+  position: relative;
+  background: var(--laser);
+  box-shadow: 0 0 10px var(--gold-text);
+  box-sizing: border-box;
+  animation: animFw 8s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: '';
+  width: 10px;
+  height: 1px;
+  background: var(--laser);
+  position: absolute;
+  top: 9px;
+  right: -2px;
+  opacity: 0;
+  transform: rotate(-45deg) translateX(0px);
+  box-sizing: border-box;
+  animation: coli1 0.3s linear infinite;
+}
+
+.loader::before {
+  top: -4px;
+  transform: rotate(45deg);
+  animation: coli2 0.3s linear infinite;
+}
+
+@keyframes animFw {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes coli1 {
+  0% {
+    transform: rotate(-45deg) translateX(0px);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: rotate(-45deg) translateX(-45px);
+    opacity: 0;
+  }
+}
+
+@keyframes coli2 {
+  0% {
+    transform: rotate(45deg) translateX(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(45deg) translateX(-45px);
+    opacity: 0.7;
+  }
+
 @media screen and (max-width: 1048px) {
 
   .hero-container,
