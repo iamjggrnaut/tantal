@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState }  from 'react'
 import Hero from '../components/Home/Hero'
 import Navbar from '../components/Navbar'
 import ServiceBlock from '../components/Home/ServiceBlock'
