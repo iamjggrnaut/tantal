@@ -8,6 +8,9 @@ import icon from "leaflet/dist/images/marker-icon.png";
 import L from "leaflet";
 import iconShadow from "leaflet/dist/images/marker-shadow.png"
 
+
+import { FaWhatsapp, FaTelegram } from "react-icons/fa";
+
 const ContactBlock = () => {
 
     const position = [55.618496, 36.990135]
@@ -42,6 +45,10 @@ const ContactBlock = () => {
                             <div className='d-flex align-items-center'>
                                 <img src={email} alt="" className='me-2 contact-icon' />
                                 <a href={`mailto:tantallazer@yandex.ru`} style={{ fontSize: '2vh', textDecoration: 'none' }}>tantallazer@yandex.ru</a>
+                            </div>
+                            <div className='d-flex' style={{ marginTop: '20px' }}>
+                                <a href="https://wa.me/+79801845909" target='_blank' className='me-3' style={{ fontSize: '24px', color: 'white' }}><FaWhatsapp /></a>
+                                <a href="https://t.me/+79801845909" target='_blank' style={{ fontSize: '24px', color: 'white' }}><FaTelegram /></a>
                             </div>
                         </div>
                     </div>
