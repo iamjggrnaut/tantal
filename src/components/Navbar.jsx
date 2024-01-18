@@ -3,6 +3,7 @@ import logo from '../assets/logo.png'
 import { Link, useNavigate } from 'react-router-dom'
 import phone from '../assets/phone.png'
 import email from '../assets/email.png'
+import { FaTelegram, FaWhatsapp } from 'react-icons/fa'
 
 const Navbar = () => {
 
@@ -84,6 +85,10 @@ const Navbar = () => {
                 <div className='d-flex align-items-center'>
                     <img src={email} alt="" className='me-2 contact-icon' />
                     <a href={`mailto:tantallazer@yandex.ru`} style={{ fontSize: '2vh', textDecoration: 'none' }}>tantallazer@yandex.ru</a>
+                </div>
+                <div className='d-flex' style={{ marginTop: '20px' }}>
+                    <a href="https://wa.me/+79801845909" target='_blank' className='me-3' style={{ fontSize: '24px', color: 'white' }}><FaWhatsapp /></a>
+                    <a href="https://t.me/+79801845909" target='_blank' style={{ fontSize: '24px', color: 'white' }}><FaTelegram /></a>
                 </div>
             </div>
         </div>
